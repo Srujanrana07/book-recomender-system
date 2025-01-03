@@ -64,6 +64,10 @@ Cosine Similarity = 7 / (sqrt(6) * sqrt(14)) ≈ 0.89
 - Displays similarity scores alongside recommendations.  
 
 ---
+![webinterface1](https://github.com/Srujanrana07/book-recomender-system/blob/main/example_image/Screenshot%202025-01-03%20164400.png)
+![webinterface2](https://github.com/Srujanrana07/book-recomender-system/blob/main/example_image/Screenshot%202025-01-03%20164251.png)
+
+---
 
 ## Installation  
 
