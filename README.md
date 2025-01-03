@@ -45,7 +45,7 @@ Dot Product (A . B) = (1*2) + (2*1) + (1*3) = 7
 Magnitude of A (||A||) = sqrt(1^2 + 2^2 + 1^2) = sqrt(6)
 Magnitude of B (||B||) = sqrt(2^2 + 1^2 + 3^2) = sqrt(14)
 Cosine Similarity = 7 / (sqrt(6) * sqrt(14)) ≈ 0.89
-
+```
 ### 4. Recommendation Process  
 - Compute the cosine similarity between the user's selected book and all other books.  
 - Rank the books based on similarity scores.  
