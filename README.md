@@ -116,7 +116,7 @@ Cosine Similarity = ((1*2) + (2*1) + (1*3)) / sqrt(1^2 + 2^2 + 1^2) * sqrt(2^2 +
 ---
 
 ## License  
-This project is licensed under the MIT License.  
+This project is licensed under the [MIT License](https://github.com/Srujanrana07/book-recomender-system/blob/main/LICENSE).  
 
 ---
 ## Live Demo
