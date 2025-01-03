@@ -16,19 +16,35 @@ A **Content-Based Recommendation System** built using Python that suggests books
 - Preprocess the text data by:  
   - Removing stop words.  
   - Tokenizing the text.  
-  - Stemming/lemmatizing (if required).  
+  - Stemming/lemmatizing.  
 
 ### 2. Bag of Words Model  
 The **Bag of Words (BoW)** model is created to represent the textual data. This involves:  
 BoW Vector = [Frequency of Term 1, Frequency of Term 2, ..., Frequency of Term N]  
 Where N is the size of the vocabulary.  
 
+Example Representation:  
+```
+"The Hobbit": [1, 2, 0, ..., 1]
+"The Lord of the Rings": [0, 1, 3, ..., 2]
+```  
+Each vector corresponds to the frequency of terms in the text.
+
 ### 3. Cosine Similarity  
 To measure the similarity between book descriptions, we calculate cosine similarity:  
-Cosine Similarity = (A · B) / (||A|| ||B||)  
+**Cosine Similarity** = (A · B) / (||A|| ||B||)  
+
 Where:  
-- A and B are BoW vectors of two book descriptions.  
-- ||A|| and ||B|| are the magnitudes of the vectors.  
+- `A` and `B` are the vectors of two book descriptions.  
+- `||A||` and `||B||` are the magnitudes (norms) of the vectors.  
+
+Example Calculation:  
+```
+A = [1, 2, 1], B = [2, 1, 3]
+Dot Product (A . B) = (1*2) + (2*1) + (1*3) = 7
+Magnitude of A (||A||) = sqrt(1^2 + 2^2 + 1^2) = sqrt(6)
+Magnitude of B (||B||) = sqrt(2^2 + 1^2 + 3^2) = sqrt(14)
+Cosine Similarity = 7 / (sqrt(6) * sqrt(14)) ≈ 0.89
 
 ### 4. Recommendation Process  
 - Compute the cosine similarity between the user's selected book and all other books.  
@@ -57,10 +73,15 @@ Where:
   pip install streamlit pandas scikit-learn numpy  
 
 ### Running the Application  
-1. Clone the repository:  
-   git clone https://github.com/Srujanrana07/book-recomender-system.git  
-2. Run the Streamlit app:  
-   streamlit run app.py  
+1. Clone the repository:
+```bash 
+   git clone https://github.com/Srujanrana07/book-recomender-system.git
+   cd book-recommendation-system
+```
+2. Run the Streamlit app:
+```bash 
+   streamlit run app.py
+```
 
 ---
 
@@ -99,6 +120,5 @@ This project is licensed under the MIT License.
 
 ---
 ## Live Demo
-[Live Demo](https://books-by-srujan0.streamlit.app/)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-brightgreen)](https://books-by-srujan0.streamlit.app/)
 
